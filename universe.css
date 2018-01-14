@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: "Bentham", "Book Antiqua", "Times New Roman";
+    font-size: 16px;
+
+    background-color: #ecdfcb;
+	color: #333;
+}
+
+
+
+/* HEADER */
+#arthur {
+    position: relative;
+	top: 0;
+	padding: 10px 20px;
+	height: 100px;
+	width: 100%;
+}
+
+img#ai {
+	display: block;
+	position: absolute;
+	float: left;
+	width: auto;
+	height: 100px;
+	margin: 5px 0 0 30px;
+	clear: both;
+	font-family: "Meddon", "Lucida Calligraphy";
+}
+
+
+
+/* BODY */
+#alfred {
+    position: relative;
+    margin: 0px 10px 10px 10px;
+}
+
+	#alfred h1 {
+		font-family: "Meddon", "Lucida Calligraphy";
+		font-size: 20px;
+	}
+
+
+
+/* FOOTER */
+#kiku {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin: 75px 20px 10px 20px;
+	width: calc(100% - 40px);
+	height: auto;
+	clear: both;
+	bottom: 0;
+
+	background-color: #fff;
+	border: #e5cdb2 3px solid;
+}
+
+.box {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	width: calc(100% / 3 - 20px);
+	padding: 10px;
+}
+
+img#tsa {
+	display: block;
+	position: relative;
+	max-width: 50px;
+	clear: both;
+	margin: auto;
+	top: 0;
+}
+
+.box h4 {
+	font-family: "Meddon", "Lucida Calligraphy";
+	font-size: 14.5px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.box p {
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+
+
+/* FUNCTIONS */
+
+::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+	::-webkit-scrollbar {
+		width: 10px;
+		background-color: #fff;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #e5cdb2;
+	}
+
+::selection {
+	background-color: #e5cdb2;
+	color: #fff;
+}
+
+
+
+/* MEDIA */
+
+video {
+	display: block;
+	margin: 50px 30px 30px 10px;
+	float: left;
+
+	border: #e5cdb2 3px solid;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+	video {
+		display: block;
+		width: 100%;
+		height: auto;
+		left: 0;
+
+		border: #e5cdb2 3px solid;
+	}
+    
+    img#ai {
+		position: relative;
+		clear: both;
+		margin: auto;
+		padding: 0;
+		width: 175px;
+		height: auto;
+    }
+
+	#alfred, #arthur, #kiku {
+		left: 0;
+		right: 0;
+		margin: 0;
+	}
+
+	.box, .box p {
+		width: 100%;
+		clear: both;
+	}
+	
+
+	img#tsa {
+		position: relative;
+		clear: both;
+		margin: auto;
+		padding-bottom: 10px;
+		float: none;
+	}
+}
